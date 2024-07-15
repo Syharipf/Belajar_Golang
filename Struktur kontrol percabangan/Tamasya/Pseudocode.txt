@@ -1,0 +1,14 @@
+program tamasya
+
+kamus
+n, mobil : integer
+
+algoritma
+input(n)
+    mobil <- n div 7
+    if n % 7 != 0 do
+        mobil <- mobil + 1
+    endif
+output(mobil)
+
+endprogram

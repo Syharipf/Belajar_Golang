@@ -1,0 +1,19 @@
+program kelipatan
+
+kamus 
+x : integer
+
+algoritma
+input(x)
+    if x%5 == 0 && x%3 == 0 do
+		output("Kelipatan 5")
+		output("Kelipatan 3")
+	else if x%5 == 0 do
+		output("Kelipatan 5")
+	else if x%3 == 0 do
+		output("Kelipatan 3")
+	else 
+		output("")
+    endif
+        
+endprogram

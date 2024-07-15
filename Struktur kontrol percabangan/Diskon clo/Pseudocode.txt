@@ -1,0 +1,17 @@
+program diskonClo
+
+kamus
+bAwal, bAkhir : integer
+diskon, status : boolean
+
+algoritma
+input(bAwal, status)
+    diskon = true
+        if diskon == status do
+		bAkhir <- bAwal - (bAwal * 35 div 100)
+		    output(bAkhir)
+	    else 
+		    output(bAwal)
+        endif
+
+endprogram

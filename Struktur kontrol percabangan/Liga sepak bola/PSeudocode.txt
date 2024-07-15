@@ -1,0 +1,27 @@
+program logaSepakBola
+
+kamus
+g1, g2, g3, g4, max, min : integer
+
+algoritma
+input(g1, g2, g3, g4)
+    max <- g1
+	if g2 > max do
+		max <- g2
+	else if g3 > max do
+		max <- g3
+	else if g4 > max do
+		max <- g4
+    endif
+	
+	min <- g1
+	if g2 < min do
+		min <- g2
+	else if g3 < min do
+		min <- g3
+	else if g4 < min do
+		min <- g4
+	endif
+output(max, min)
+
+endprogram

@@ -1,0 +1,13 @@
+program konsonan
+
+kamus
+kar : char
+
+algoritma
+input(kar)
+    if (kar >= '0' && kar <= '9') || ((kar >= 'a' && kar <= 'z') || (kar >= 'A' && kar <= 'Z')) && (kar == 'a' || kar == 'A' || kar == 'i' || kar == 'I' || kar == 'u' || kar == 'U' || kar == 'e' || kar == 'E' || kar == 'o' || kar == 'O') do
+		output("Bukan Konsonan")
+	else if (kar >= 'a' && kar <= 'z') || (kar >= 'A' && kar <= 'Z') do
+		output("Konsonan")
+    endif
+endprogram

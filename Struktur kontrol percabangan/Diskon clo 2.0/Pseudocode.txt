@@ -1,0 +1,17 @@
+program diskonClo2.0
+
+kamus
+belanja, potongan : integer
+asesmen : boolean
+
+algoritma
+input(belanja, asesmen)
+    if asesmen do
+		potongan = belanja * 0.35
+	else 
+		potongan = 0
+	endif
+
+ouput(belanja - potongan)
+
+endprogram

@@ -1,0 +1,16 @@
+program temperatur
+
+kamus
+t1, t2, t3, t4, t5 : real
+
+algoritma
+input(t1, t2, t3, t4, t5)  
+    if t1 < t2 && t2 < t3 && t3 < t4 && t4 < t5 do
+        output("Stabil naik")
+    else if t1 > t2 && t2 > t3 && t3 > t4 && t4 > t5 do
+		output("Stabil turun")
+	else
+		output("Tidak stabil")
+    endif
+
+endprogram

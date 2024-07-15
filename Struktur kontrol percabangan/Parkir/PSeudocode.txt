@@ -1,0 +1,20 @@
+program parkir
+
+kamus
+h1, m1, h2, m2, menitAw, menitAw, total, hh, mm : integer
+
+algoritma
+input(h1, m1, h2, m2)
+    menitAw <- h1*60 + m1
+	menitAk <- h2*60 + m2
+	total <- menitAk - menitAw
+
+	if total < 0 do
+		total += 12 * 60
+	endif
+
+	hh = total div 60
+	mm = total mod 60
+output(hh, mm)
+
+endprogram

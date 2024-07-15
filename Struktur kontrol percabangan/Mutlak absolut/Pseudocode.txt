@@ -1,0 +1,15 @@
+program mutlakAbsolut
+
+kamus
+x, hasil : integer
+
+algoritma
+input(x)
+    if x < 0 do
+		hasil <- x * -1
+		output(hasil)
+	else 
+		output(x)
+	endif
+
+endprogram

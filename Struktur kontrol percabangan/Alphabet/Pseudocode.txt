@@ -1,0 +1,13 @@
+program alphabet
+
+kamus
+kar : char
+
+algoritma
+input(kar)
+    if kar >= 'A' && kar <= 'Z' || kar >= 'a' && kar <= 'z' do
+		output("Alphabet")
+	else
+		output("Bukan Alphabet")
+    endif
+endprogram
