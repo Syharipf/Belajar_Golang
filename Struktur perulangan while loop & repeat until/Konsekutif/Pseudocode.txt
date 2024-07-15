@@ -1,0 +1,21 @@
+program konsekutif
+
+kamus
+x, digitAk, digitAw : integer
+status : boolean
+
+algoritma
+input(x)
+    status <- true
+    digitAk <- x % 10
+    x div<- 10
+        while x > 10 && status do
+            digitAw <- x mod 10
+                if digitAk - digitAw == 1 && digitAk - digitAw == -1 do
+                    status <- false
+                endif
+            digitAk <- digitAw
+            x div<- 10
+        endwhile
+    output(status)
+endprogram

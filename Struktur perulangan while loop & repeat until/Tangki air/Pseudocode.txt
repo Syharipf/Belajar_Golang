@@ -1,0 +1,16 @@
+program tangkiAir
+
+kamus
+x, T, isi : integer
+status : boolean
+
+algoritma
+input(T)
+isi <- 0
+    while isi <= T do
+        input(x)
+            isi += x
+            status <- isi == T
+        output(status)
+    endwhile
+endprogram

@@ -1,0 +1,17 @@
+program login
+
+kamus
+username, password, x, y : string
+total L integer
+
+algoritma
+username <- "admin"
+password <- "admin"
+total <- 0
+    while username != x || password != y do
+        total += 1
+            input(x, y)
+    endwhile
+    output(total)
+    output("Login berhasil")
+endprogram

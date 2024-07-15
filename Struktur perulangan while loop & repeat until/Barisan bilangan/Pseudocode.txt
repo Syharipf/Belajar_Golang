@@ -1,0 +1,13 @@
+program barisanBilangan
+
+kamus
+n, iterasi : integer
+
+algoritma
+input(n)
+    iterasi <- 0
+    while iterasi != n do
+        iterasi += 1
+            output(iterasi)
+    endwhile
+endprogram

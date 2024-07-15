@@ -1,0 +1,13 @@
+program dompet
+
+kamus
+x, total : integer
+
+algoritma
+total <- 0
+    repeat
+        input(x)
+    until x == 0
+        total += x
+        output(total)
+endprogram

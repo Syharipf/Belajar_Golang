@@ -1,0 +1,16 @@
+program digit
+
+kamus
+x, total, digit : integer
+
+algoritma
+input(x)
+    total <- 0
+    while x > 0 do
+        digit = x % 10
+            output(digit, " ")
+        total += digit
+        x /= 10
+    endwhile
+    output(total)
+endprogram

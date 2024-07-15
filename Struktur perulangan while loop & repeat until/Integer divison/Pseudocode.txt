@@ -1,0 +1,16 @@
+program integerDivision
+
+kamus
+x, y, mod, div : integer
+
+algoritma
+input(x, y)
+    div <- 0
+    mod <- x
+        while mod >= y do 
+            mod <- mod - y
+            div <- div + 1
+        endwhile
+    output(x,"MOD",y,"=",mod)
+    output(x,"DIV",y,"=",div)
+endprogram
