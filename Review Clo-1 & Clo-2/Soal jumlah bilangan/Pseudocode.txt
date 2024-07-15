@@ -1,0 +1,16 @@
+program jumlahBilangan
+
+kamus
+x, digit, hasil : integer
+
+algoritma
+input(x)
+    hasil <- 0
+        while x > 0 do
+            digit = x % 10
+            hasil += digit
+            x = x div 10
+        endwhile
+output(hasil)
+
+endprogram

@@ -1,0 +1,17 @@
+program voucher
+
+kamus
+x, d1, d3, d4 : integer
+diskon, voucher : boolean
+
+algoritma
+input(X)
+    d1 <- x div 1000
+	d3 <- x div 10 mod 10
+	d4 <- x mod 10
+
+    diskon <- d3 mod 2 == 0
+	voucher <- (d1 + d3) mod 4 == 0
+output(diskon, voucher)
+
+endprogram

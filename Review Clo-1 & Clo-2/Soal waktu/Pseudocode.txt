@@ -1,0 +1,14 @@
+program waktu
+
+kamus
+detik, menit, jam : integer
+
+algoritma
+input(detik)
+    jam <- detik div 3600
+        detik <- detik mod 3600
+    menit <- detik div 60
+        detik <- detik mod 60
+output(jam, menit, detik)
+
+endprogram
