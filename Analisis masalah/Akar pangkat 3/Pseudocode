@@ -1,0 +1,12 @@
+program akarPangkat3
+
+kamus
+x, y : integer
+status : boolean
+
+algoritma
+input(x, y)
+    status = x*x*x == y
+output(status)
+
+endprogram

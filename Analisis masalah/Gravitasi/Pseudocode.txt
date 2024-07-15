@@ -1,0 +1,19 @@
+program gravitasi
+
+kamus 
+berat : integer
+bumi, merkurius, venus, mars, yupiter, saturnus, uranus, neptunus : real
+
+algoritma
+input(berat)
+    bumi = berat * 9.8
+	merkurius = berat * 9.8 * 0.38
+	venus = berat * 9.8 * 0.91
+	mars = berat * 9.8 * 0.38
+	yupiter = berat * 9.8 * 2.37
+	saturnus = berat * 9.8 * 0.92
+	uranus = berat * 9.8 * 0.89
+	neptunus = berat * 9.8 * 1.13
+output(merkurius, venus, bumi, mars, yupiter, saturnus, uranus, neptunus)
+
+endprogram

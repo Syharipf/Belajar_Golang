@@ -1,0 +1,11 @@
+program penduduk
+
+kamus
+pAawal, jLahir, jImigrasi, jKematian, jEmigrasi, jAkhir : integer
+
+algoritma
+input(pAawal, jLahir, jImigrasi, jKematian, jEmigrasi, jAkhir)
+    jAkhir <- pAawal + jLahir + jImigrasi - jKematian - jEmigrasi
+output(jAkhir)
+
+endprogram
