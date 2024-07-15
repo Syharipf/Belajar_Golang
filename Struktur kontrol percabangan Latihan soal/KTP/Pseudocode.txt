@@ -1,0 +1,15 @@
+program ktp 
+
+kamus
+usia : integer
+KK : boolean
+
+algoritma
+input(usia, KK)
+    if usia >= 17 &7 KK then
+        output("Bisa membuat KTP")
+    else 
+        ouput("Belum bisa membuat KTP")
+    endif
+
+endprogram

@@ -1,0 +1,54 @@
+program gajiPegawai
+
+kamus
+jabatan                                       : string
+masaKerja, jumlahAnak, gaji, tunjangan, total : integer
+
+algoritma
+ouput(jabatan, masaKerja, jumlahAnak)
+    if jumlahAnak > 3 then
+		jumlahAnak = 3
+	endif
+
+	if jabatan == "staf" then
+		if masaKerja < 5 then
+			gaji <- 4000
+			tunjangan <- jumlahAnak * 0
+			total <- gaji + tunjangan
+			output(total)
+
+		if masaKerja >= 5 && masaKerja <= 10 then
+			gaji <- 4000
+			tunjangan <- jumlahAnak * 100
+			total =<-gaji + tunjangan
+			ouput(total)
+
+		if masaKerja > 10 then
+			gaji <- 5000
+			tunjangan <- jumlahAnak * 100
+			total <- gaji + tunjangan
+			ouput(total)
+		endif
+
+	if jabatan == "manager" then
+		if masaKerja > 10 then
+			gaji <- 10000
+			tunjangan <- jumlahAnak * 300
+			total <- gaji + tunjangan
+			ouput(total)
+
+		if masaKerja <= 10 then
+			gaji <- 8500
+			tunjangan <- jumlahAnak * 300
+			total <- gaji + tunjangan
+			ouput(total)
+		endif
+	
+	if jabatan == "direktur" then
+		gaji <- 20000
+		tunjangan <- jumlahAnak * 500
+		total <- gaji + tunjangan
+		ouput(total)
+	endif
+
+endprogram

@@ -1,0 +1,24 @@
+program ojol
+
+kamus
+jam, menit, jarak, tarif : real
+
+algoritma
+input(jam, menit, jarak)
+    if (jam < 05 && jam > 22) || (jarak > 20) || (jam > 22) then
+		output("Maaf, kami tidak bisa melayani anda")
+	else then
+		if (jam >= 5 && jam <= 9) || (jam >= 16 && jam <= 19) then
+			if jarak > 0 && jarak <= 10 then
+				tarif <- jarak * 5000
+				output(integer(tarif))
+			else if jarak > 10 && jarak <= 20 then
+				tarif <- jarak * 4500
+				output(integer(tarif))
+			endif
+		else if (jam > 9 && jam < 16) || (jam > 19 && jam <= 22) then
+			tarif <- jarak * 4000
+			output(integer(tarif))
+    endif
+    
+endprogram

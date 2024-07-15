@@ -1,0 +1,47 @@
+program managerEpl
+
+kamus
+pertandingan1, pertandingan2, pertandingan3, pertandingan4, pertandingan5 : string
+jumlahKekalahan                                                           : integer
+
+algoritma
+input(pertandingan1, pertandingan2, pertandingan3, pertandingan4, pertandingan5)
+	jumlahKekalahan <- 0
+
+	if pertandingan1 == "kalah" then
+		jumlahKekalahan++
+	else
+		jumlahKekalahan = 0
+	end if
+
+	if pertandingan2 == "kalah" then
+		jumlahKekalahan++
+	else
+		jumlahKekalahan = 0
+	end if
+
+	if pertandingan3 == "kalah" then
+		jumlahKekalahan++
+	else
+		jumlahKekalahan = 0
+	end if
+
+	if pertandingan4 == "kalah" then
+		jumlahKekalahan++
+	else
+		jumlahKekalahan = 0
+	end if
+
+	if pertandingan5 == "kalah" then
+		jumlahKekalahan++
+	else 
+		jumlahKekalahan = 0
+	end if
+
+	if jumlahKekalahan == 5 then
+		ouput("Dipecat")
+	 else
+		output("Tidak dipecat")
+	endif
+
+endprogram

@@ -1,0 +1,17 @@
+program motorKopling
+
+kamus
+gigi                     : integer
+statusKopling, statusGas : bool
+
+algoritma
+input(gigi, statusKopling, statusGas)
+	if statusKopling || gigi == 0 then
+		output("Mesin menyala dan motor tidak berjalan")
+	else if !statusGas then
+		ouput("Mesin mati")
+	else then
+		output("Motor berjalan")
+	endif
+
+endprogram

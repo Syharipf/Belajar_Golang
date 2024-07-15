@@ -1,0 +1,24 @@
+program pengirimanParcel
+
+kamus
+berat, kg, gr, biaya, biayaTambahan1, biayaTambahan2 : integer
+
+algoritma
+input(berat)
+	kg <- berat div 1000
+	gr <- berat mod 1000
+	biaya <- kg * 10000
+	biayaTambahan1 <- gr * 5
+	biayaTambahan2 <- gr * 15
+	    if gr != 0 && gr < 500 then
+	    	output(kg"kg +"gr "gr")
+		    output(biaya+biayaTambahan2)
+    	else if gr != 0 && (gr >= 500 && gr <= 999) then
+		    output(kg"kg +"gr "gr")
+    		output(biaya+biayaTambahan1)
+    	else then
+    		output(kg"kg +"gr "gr")
+    		output(biaya)
+	    endif
+
+endprogram
