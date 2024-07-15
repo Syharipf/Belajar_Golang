@@ -1,0 +1,20 @@
+program faktorPerulangan
+
+kamus 
+n, m, minimum : integer
+
+algoritma
+input(n, m)
+    minimum <- n
+        if n < m then
+            minimum <- m 
+        endif
+    
+    for i <- 1 to minimum do
+		if n%i == 0 && m%i == 0 then
+			output(i, " ")
+        endif
+    endfor
+output()
+
+endprogram

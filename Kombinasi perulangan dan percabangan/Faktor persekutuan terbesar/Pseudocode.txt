@@ -1,0 +1,20 @@
+program faktorPersekutuanTerbesar
+
+kamus
+n, m, minimum, fpb : integer
+
+algoritma
+input(n, m)
+    minimum <- m
+        if n < m then
+            minimum <- n 
+        endif
+    
+    for i <- 1 to minimum do
+		if n%i == 0 && m%i == 0 then
+			fpb = i
+        endif
+    endfor
+output(fpb)
+
+endprogram
