@@ -1,0 +1,11 @@
+program soalMatematikaB
+
+kamus
+f, x : real
+
+algoritma
+input(x)
+     f <- (x*x*x + 3*x) div (x*x*x*x - 3*x*x + 4)
+output(f)
+
+endprogram

@@ -1,0 +1,16 @@
+program cacahUang
+
+kamus
+x : integer
+d1, d2, d3 : integer
+
+algoritma
+input(x)
+    d1 <- x div 10000
+          x <- x mod 10000
+    d2 <- x div 5000
+          x <- x mod 5000
+    d3 <- x div 1000
+output(d1, d2, d3)
+
+endprogram

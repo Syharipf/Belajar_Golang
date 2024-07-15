@@ -1,0 +1,11 @@
+program soalMatematikaA
+
+kamus
+f, x, y : real
+
+algoritma
+input(x, y)
+       f <- 1 div (3*x*x + 10) + 10*y + 7
+output(f)
+
+endprogram

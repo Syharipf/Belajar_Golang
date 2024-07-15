@@ -1,0 +1,12 @@
+program mencariPosisi
+
+kamus
+v, s, t : integer
+total : integer
+
+algoritma
+input(s, v, t)
+    total <- (v * t) + s
+output(total)
+
+endprogram

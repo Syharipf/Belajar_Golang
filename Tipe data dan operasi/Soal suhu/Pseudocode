@@ -1,0 +1,13 @@
+program soalSuhu
+
+kamus 
+c, r, f, k : real
+
+algoritma
+input(c)
+    r <- c * 4.0 div 5.0
+    f <- c * 9.0div 5.0 + 32.0
+    k <- c + 273.15
+output(r, f, k)
+
+endprogram
