@@ -1,0 +1,46 @@
+
+const pi : real = 3.14
+
+function volume(r, t float64) float64 ->
+
+algoritma
+	return pi * r * r * t
+
+endfunction
+
+functioon massa(r, t, m float64) float64 ->
+
+algoritma
+	return volume(r, t) * m
+
+endfunction
+
+procedure display(m1, m2 float64) 
+
+algoritma
+	if m1 == m2 then
+		output("BALANCE")
+	else if m1 > m2 then
+		output(m1 - m2)
+	else then
+		output(m2 - m1)
+	endif
+
+endfprocedure
+
+program timbangan
+
+kamus
+r, t1, m1, t2, m2 : real
+stor1, stor2      : real
+
+algoritma
+input(r)
+input(t1, m1)
+input(t2, m2)
+
+	stor1 <- massa(r, t1, m1)
+	stor2 <- massa(r, t2, m2)
+	display(stor1, stor2)
+
+endprogram

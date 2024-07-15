@@ -1,0 +1,48 @@
+function f(x : integer) int ->
+
+algoritma
+return x * x
+
+endfunction
+
+function g(x : integer) int ->
+
+algoritma
+return x - 2
+
+endfunction
+
+function h(x : integer) int ->
+algoritma
+return x + 1
+
+endfunction
+
+function fungsi(a, b, c : integer) (integer, integer, integer) ->
+
+kamus
+fogoh, gohof, hofog : integer
+
+algoritma
+	fogoh <- f(g(h(a)))
+	gohof <- g(h(f(b)))
+	hofog <- h(f(g(c)))
+
+	return fogoh, gohof, hofog
+
+endfunction
+
+program komposisi
+
+kamus
+a, b, c    : integer
+f1, f2, f3 : integer
+
+algoritma
+input(a, b, c)
+    f1, f2, f3 <- fungsi(a, b, c)
+output("(fogoh) (",f1,"))
+output("(gohof) (",f2,"))
+output("(hofog) (",f3,"))
+
+endprogram

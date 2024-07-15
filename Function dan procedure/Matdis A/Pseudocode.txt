@@ -1,0 +1,46 @@
+function faktorial(n : integer) integer ->
+
+kamus 
+hasil : integer
+
+algoritma
+if n == 0 || n == 1 thrn
+		return 1
+endif
+
+	hasil <- 1
+	for i <- 2 to n do
+		hasil *= i
+	endfor
+	return hasil
+
+endfunction
+
+function permutation(x, y : integer) integer ->
+
+algoritma
+return faktorial(x) div faktorial(x-y)
+
+endfunction
+
+function kombinasi(x, y : integer) integer ->
+return faktorial(x) div (faktorial(x-y) * faktorial(y))
+
+program permutasi
+
+kamus
+a, b, c, d : integer
+
+algoritma
+input(a, b, c, d)
+	if a >= c then
+		fmt.Println(permutasi(a, c))
+		fmt.Println(kombinasi(a, c))
+	endif
+
+	if b >= d then
+		fmt.Println(permutasi(b, d))
+		fmt.Println(kombinasi(b, d))
+	endif
+
+endprogram

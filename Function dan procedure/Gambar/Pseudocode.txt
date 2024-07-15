@@ -1,0 +1,43 @@
+procedure zoomIn(p, l, n : integer) 
+
+kamus
+pA, lA : integer
+
+algoritma
+	pA <- p * n
+	lA <- l * n
+
+	output(pA, lA)
+
+endfprocedure
+
+procedure zoomOut(p, l, n : integer) 
+
+kamus
+pA, lA : integer
+
+algoritma
+	pA <- p / n
+	lA <- l / n
+
+	output(pA, lA)
+
+endfprocedure
+
+program gambar
+
+kamus
+p, l, n : integer
+s       : string
+
+algoritma
+input(p, l)
+input(s, n)
+
+	if s == "+" then
+		zoomIn(p, l, n)
+	else if s == "-" then
+		zoomOut(p, l, n)
+    endif
+
+endprogram
