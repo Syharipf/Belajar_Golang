@@ -1,0 +1,20 @@
+program pramuka
+
+kamus
+n : integer
+item, status : boolean
+
+algoritma
+input(n)
+status <- true
+    for i <- 1 to n do 
+        for i <- 0 to 5 do
+            input(item)
+                if !item do 
+                    status = false
+                endif
+        endfor
+    endfor
+ouput(status)
+
+endprogram

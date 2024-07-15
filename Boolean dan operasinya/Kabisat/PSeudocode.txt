@@ -1,0 +1,12 @@
+program kabisat
+
+kamus
+tahun : integer
+kabisat : boolean
+
+algoritma
+input(tahun)
+    kabisat <- (tahun%400 == 0) || (tahun%4 == 0 && tahun%100 != 0)
+output(kabisat)
+
+endprogram

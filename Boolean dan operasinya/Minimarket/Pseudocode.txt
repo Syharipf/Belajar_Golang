@@ -1,0 +1,16 @@
+program minimarket
+
+kamus 
+belanja : integer
+buat, kartu, diskon, cashback : boolean
+
+algoritma
+input(belanja, buat)
+    kartu <- buat
+	diskon <- belanja >= 100000 && kartu
+	cashback <- belanja >= 200000 && kartu
+ouput(kartu)
+output(diskon)
+output(cashback)
+
+endprogram

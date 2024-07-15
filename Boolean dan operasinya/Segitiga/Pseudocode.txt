@@ -1,0 +1,12 @@
+program segitiga
+
+kamus 
+a, b, c : integer
+status : boolean
+
+algoritma
+input(a, b, c)
+    status <-  a+b > c && a+c > b && b+c > a
+output(status)
+
+endprogram

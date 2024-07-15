@@ -1,0 +1,13 @@
+program alphanumerik
+
+kamus
+kar : char
+status : boolean
+
+alphanumerik
+input(kar)
+    status <- (kar >= 'A' && kar <= 'Z') || (kar >= 'a' && kar <= 'z') ||  (kar >= '0' && kar <= '9')
+output(status)
+
+endprogram
+    

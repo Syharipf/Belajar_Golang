@@ -1,0 +1,12 @@
+program duaLingkaran
+
+kamus
+A, B, tPusat : integer
+irisan : boolean
+
+algoritma
+input(A, B, tPusat)
+    irisan <- (A + B) <= tPusat
+output(irisan)
+
+endprogram
