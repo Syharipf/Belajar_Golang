@@ -1,0 +1,16 @@
+program ngoding
+
+kamus
+n, m, total : integer
+hasil : real
+
+algoritma
+input(n)
+total <- 0
+    for i <- 1 to n do
+        input(m)
+        total += m
+    endfor
+    hasil = total div n
+    output(hasil)
+endprogram

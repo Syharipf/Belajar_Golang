@@ -1,0 +1,11 @@
+program cetakBarisan
+
+kamus
+x, y : integer
+
+algoritma
+input(x, y)
+    for i <- x to y do 
+        output(i)
+    endfor
+endprogram 

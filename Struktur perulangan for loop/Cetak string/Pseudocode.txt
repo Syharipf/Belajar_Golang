@@ -1,0 +1,13 @@
+program cetakString
+
+kamus
+x : integer
+kar : string 
+
+algoritma
+input(x)
+input(kar)
+    for i <- 1 to x do
+        output(kar)
+    endfor
+endprogram

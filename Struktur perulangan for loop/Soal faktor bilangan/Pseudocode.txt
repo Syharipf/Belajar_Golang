@@ -1,0 +1,14 @@
+program faktorBilangan
+
+kamus
+n : integer
+hasil : boolean
+
+algoritma
+input(n)
+    for i <- 1 to n do
+        hasil = n % i == 0
+            output(i, hasil)
+    endfor
+endprogram
+    

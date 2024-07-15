@@ -1,0 +1,14 @@
+program bidangPersegi
+
+kamus
+n, s, keliling, luas : integer
+
+algoritma
+input(n)
+    for i <- 1 to n do
+        input(s)
+            keliling <- s*s
+            luas <- 4*s 
+        output(keliling, luas)
+    endfor
+endprogram

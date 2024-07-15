@@ -1,0 +1,15 @@
+program sandi
+
+kamus
+x, y, d1, d2, total : integer
+
+algoritma
+input(x)
+    for i <- 1 to x do
+        total <- 0
+            input(y)
+        d1 <- y div 1000
+        d2 <- y mod 10
+        total += d1 + d2
+    endfor
+endprogram
