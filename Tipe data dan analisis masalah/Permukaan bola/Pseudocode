@@ -1,0 +1,11 @@
+program permukaanBola
+
+kamus
+r, luas : real
+
+algoritma
+input(r)
+    luas <- 4 * 22 * r * r div 7
+output(luas)
+
+endprogram

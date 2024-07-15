@@ -1,0 +1,12 @@
+program digitGanda
+
+kamus 
+x, d1, d2 : integer
+
+algoritma
+input(x)
+    d1 <- x div 10
+    d2 <- x mod 10
+output(d1, x, d2)
+
+endprogram

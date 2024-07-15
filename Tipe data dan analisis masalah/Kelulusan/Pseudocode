@@ -1,0 +1,12 @@
+program kelulusan
+
+kamus 
+nilai : integer
+buat, status : boolean
+
+algoritma
+input(nilai, buat)
+    status <- (nilai > 55 && buat) || nilai > 90
+output(status)
+
+endprogram

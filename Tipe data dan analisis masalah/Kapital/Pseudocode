@@ -1,0 +1,12 @@
+program kapital
+
+kamus 
+kar : char
+kapital : boolean
+
+algoritma
+input(kar)
+    kapital <- kar >= 'A' && kar <= 'Z'
+output(kapital)
+
+endprogram
