@@ -1,0 +1,22 @@
+function volume(r, t : integer) real ->
+
+kamus
+hasil : real
+
+algoritma
+hasil <- 3.14 * (r*r) * t
+    return hasil
+endfunction
+
+program volumeTabung 
+
+kamus
+r, t : integer
+volumeT : real
+
+algoritma
+input(r, t)
+    volume <- volumeT(r, t)
+output(volume)
+
+endprogram

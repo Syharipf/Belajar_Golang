@@ -1,0 +1,30 @@
+function discount(belanja : integer, member : boolean) integer ->
+
+kamus
+harga : integer
+
+algoritma
+if belanja > 100000 && member then
+		harga <- belanja - (belanja * 10 div 100)
+	else if belanja > 100000 && !member then
+		harga <- belanja - (belanja * 5 div 100)
+	else if belanja < 100000 then
+		harga <- belanja
+	endif
+
+	return harga
+
+endfunction
+
+program diskon
+
+kamus
+belanja, total : integer
+member : boolean
+
+algoritma
+input(belanja, member)
+    total <- discount(belanja, member)
+output(total)
+
+endprogram

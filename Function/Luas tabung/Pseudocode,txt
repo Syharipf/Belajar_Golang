@@ -1,0 +1,22 @@
+function luasT(r, t : integer) real ->
+
+kamus 
+hasil : real
+
+algoritma
+hasil <- 2 * 3.14 * r * (r+t)
+    return hasil
+endfunction
+
+program luasTabung
+
+kamus 
+r, t : integer
+luas : real
+
+algoritma
+input(r, t)
+    luas = luasT(r, t)
+output(luas)
+
+endprogram

@@ -1,0 +1,34 @@
+function fibo(n : integer) integer ->
+
+kamus
+a, b, hasil, total : integer
+
+algoritma
+if n <= 1 then
+	return 0
+endif
+
+	a, b = 0, 1
+	total <- a + b
+
+	for i <- 2 to n do
+		hasil <- a + b
+		total += hasil
+		a <- b
+		b <- hasil
+	endfor
+
+	return total
+endfunction
+
+program fibonacci
+
+kamus
+n, hasil : integer
+
+algoritma
+input(n)
+    hasil <- fibo(n)
+output(hasil)
+
+endprogram

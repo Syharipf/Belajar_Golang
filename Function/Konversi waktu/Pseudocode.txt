@@ -1,0 +1,28 @@
+function waktu(x, y, z : integer) integer ->
+
+kamus
+jam, waktu, detik, total : integer
+
+algoritma
+var jam, menit, detik, total int
+jam <- x * 3600
+menit <- y * 60
+detik <- z
+    
+    total <- jam + menit + detik
+	return total
+
+endfunction
+
+program konversiWaktu
+
+kamus
+x, y, z : integer
+time    : integer
+
+algoritma
+input(x, y, z)
+    time <- waktu(x, y, z)
+output(time)
+
+endprogram

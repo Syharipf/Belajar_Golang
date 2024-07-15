@@ -1,0 +1,27 @@
+function  Fahrenheit(celcius : real) real ->
+
+kamus 
+suhu real
+
+algoritma
+suhu = (9 * celcius / 5) + 32
+	return suhu
+
+endfunction
+
+program temperatur
+
+kamus
+i, n          : integer
+celcius, suhu : real
+
+algoritma
+input(celcius)
+    i <- 1
+    for i <= n do
+        input(celcius)
+            suhu <- Fahrenheit(celcius)
+        output(suhu)
+            i += 1
+
+endprogram

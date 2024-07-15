@@ -1,0 +1,44 @@
+function faktorial(n : integer) integer ->
+
+kamus 
+hasil : integer
+
+algoritma
+if n == 0 || n == 1 thrn
+		return 1
+endif
+
+	hasil <- 1
+	for i <- 2 to n do
+		hasil *= i
+	endfor
+	return hasil
+
+endfunction
+
+function permutation(x, y : integer) integer ->
+
+algoritma
+return faktorial(x) div faktorial(x-y)
+
+endfunction
+
+program permutasi
+
+kamus
+x, y, factX, factY, perm : integer
+
+algoritma
+input(x, y)
+	factX <- faktorial(x)
+	factY <- faktorial(y)
+
+	if x > y then
+		perm <- permutasi(x, y)
+	else then
+		perm <- permutasi(y, x)
+	endif
+
+	output(factX, factY, perm)
+
+endprogram
