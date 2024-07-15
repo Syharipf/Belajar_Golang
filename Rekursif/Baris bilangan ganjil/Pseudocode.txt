@@ -1,0 +1,24 @@
+procedure baris(in n, current : integer) 
+
+algoritma
+	if current > n then
+		return
+	endif
+	if current mod 2 != 0 then
+		output(current)
+	endif
+	baris(n, current+1)
+
+endprocedure
+
+program barisBilanganGanjil
+
+kamus
+n : integer
+
+algoritma
+	input(n)
+	output(n)
+	baris(n, 1)
+
+endprogram

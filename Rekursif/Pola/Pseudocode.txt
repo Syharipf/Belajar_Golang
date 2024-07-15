@@ -1,0 +1,26 @@
+procedure polaBintang(in n, i : integer) 
+
+algoritma
+	if i > n then
+		return
+    endif
+
+	for j <- 0 to i d0
+		output("*")
+	endfor
+	output()
+
+	polaBintang(n, i+1)
+
+endprocedure
+
+program pola
+
+kamus
+n : integer
+
+algoritma
+input(n)
+	polaBintang(n, 1)
+
+endprogram

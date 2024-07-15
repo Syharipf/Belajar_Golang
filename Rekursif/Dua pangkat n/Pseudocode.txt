@@ -1,0 +1,21 @@
+function pangkat (n:integer)-> integer
+
+algortima
+if n == 1 then
+    return 2
+else
+    return 2* pangkat (n-1)
+endif
+
+endfunction
+
+program DuaPangkatN
+
+kamus
+n: integer
+algoritma
+
+input(n)
+output (pangkat(n))
+
+endprogram

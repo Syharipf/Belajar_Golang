@@ -1,0 +1,21 @@
+function fibo(n : integer) integer ->
+
+algoritma
+if n <= 1 then
+    return n 
+else then
+    return fibo(n-1) + fibo(n-2)
+endif
+
+endfunction
+
+program fibonacci
+
+kamus
+n : integer
+
+algoritma
+input(n)
+output(fibo(n))
+
+endprogram

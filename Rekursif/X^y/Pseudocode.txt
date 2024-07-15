@@ -1,0 +1,21 @@
+function pangkat(x, y : integer) integer ->
+
+algoritma
+if y == 0 then
+    return 1
+else then
+    return x * pangkat(x, y-1)
+endif
+
+endfunction
+
+program X^y
+
+kamus
+x, y : integer
+
+algoritma
+input(x,y)
+output(pangkat(x,y))
+
+endprogram

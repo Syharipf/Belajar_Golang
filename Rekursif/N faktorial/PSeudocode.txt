@@ -1,0 +1,20 @@
+function faktorial(n:integer)-> integer
+
+algortima
+if n=1 or n == 0 then
+    return 1
+else
+    return n * faktorial(n-1)
+endif
+endfunction
+
+program NFaktorial
+
+kamus
+n: integer
+
+algoritma
+input(n)
+output(faktorial(n))
+
+endprogram
