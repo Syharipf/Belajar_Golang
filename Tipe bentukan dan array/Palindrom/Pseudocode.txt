@@ -1,0 +1,74 @@
+type capasity: array[0..256] of integer
+
+procedure isiData(in/out a : capasity, n : integer)
+
+kamus 
+i : integer
+
+algoritma
+for i <- 0 to n do
+    input(a[i])
+endfor
+
+endprocedure
+
+procedure reverseArray(in/out a : capasity, n : integer)
+
+kamus
+i, j : integer
+
+algoritma
+for i, j <- 0, n-1 to j do
+		a[i], a[j] = a[j], a[i]
+endfor
+
+endprocedure
+
+function isiPolindrom(a : capasity, n : integer) bool ->
+
+kamus 
+i : integer
+
+algoritma
+for i <- 0 to n/2 do
+		if a[i] != a[n-1-i] then
+			return false
+		endif
+	return true
+endfor
+
+endfunction
+
+program polindrom 
+
+kamus
+a : capasity
+n, i : integer
+
+algoritma
+input(n)
+    if n > 256 || n < 1 then
+		return
+	endif
+
+    isiData(a, n)
+
+    for i <- 0 to n do
+		output(a[i])
+	endfor
+	output()
+
+	reverseArray(a, n)
+
+	for i <- 0 to n do
+		output(a[i])
+    endfor
+	output()
+
+    if isiPolindrom(a, n) then
+		output("Array memiliki pola palindrom.")
+	else then
+		output("Array tidak memiliki pola palindrom.")
+    endif
+
+endprogram

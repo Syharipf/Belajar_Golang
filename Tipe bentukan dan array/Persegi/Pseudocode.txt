@@ -1,0 +1,32 @@
+kamus
+type geometry <
+    area, perimeter : integer
+    >
+
+type rectangle <
+    length, width : integer
+	color         : string
+	property      : geometry
+    >
+
+procedure isiData(in/out persegi : rectangle)
+input(persegi.length, persegi.width, persegi.color)
+
+endprocedure
+
+procedure hitung(in/out persegi : rectangle)
+persegi.property.area <- persegi.length * persegi.width
+persegi.property.perimeter <- 2 * (persegi.length + persegi.width)
+
+endprocedure
+
+program persegi
+
+kamus
+persegi : rectangle
+
+algoritma
+isiData(persegi)
+hitung(persegi)
+
+endprogram

@@ -1,0 +1,41 @@
+kamus
+type teman:array[0..100] of string
+
+procedure tulis(in/out a : teman, n : integer)
+
+kamus
+i : integer
+
+algoritma
+output("Masukan nama teman kelas anda: ")
+    for i <- 0 to m-1 do
+        input(a[1])
+    endfor
+
+endprocedure
+
+procedure cetak(in a : teman, n : integer)
+
+kamus 
+i : integer
+
+algoritma
+output("Daftar teman kelas anda: ")
+    for i <- o to m-1 do   
+        output(a[i])
+    endfor
+
+endprocedure
+
+program temanKelas
+
+kamus
+n : integer
+t : teman
+
+algoritma
+input(n)
+    cetak(t, n)
+    tulis(t, n)
+
+endprogram

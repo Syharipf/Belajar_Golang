@@ -1,0 +1,31 @@
+procedure hitungLuas (in/out x : balok)
+
+algoritma
+x.luas 2* (x.p * x.1 + x.p * x.t + x.1 * x.t)
+
+endprocedure
+
+procedure hitungVolume (in/out x balok)
+
+algoritma
+
+x.volume <- x.p * x.1 * x.t
+
+endprocedure
+
+program Contoh_Balok
+
+kamus
+type balok <
+p,l,t: integer
+volume, luas integer
+bb: balok
+
+algoritma
+input (bb.p, bb.l, bb.t)
+hitungLuas (bb)
+hitung Volume (bb)
+output (bb.luas, bb.volume)
+
+endprogram
+

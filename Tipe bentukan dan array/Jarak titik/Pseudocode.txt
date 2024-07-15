@@ -1,0 +1,38 @@
+kamus
+
+type titik <
+    x : real
+    y : real
+>
+
+function jarak(p1, p2 : titik) real ->
+    return akar(pangkat(p1.x - p2.x) + pangkat(p1.y - p2.y))
+
+endfunction
+
+function akar(x : real) real ->
+    return math.sqrt(x)
+
+endfunction
+
+function pangkat(x real) real ->
+    return math.pow(x,2)
+
+endfunction
+
+program jarakTitik
+
+kamus
+a, b, c, d : real
+hasil : real
+p1, p2 : real
+
+algoritma
+input(a, b, c, d)
+    p1 <- {x : a, y : b}
+    p2 <- {x : c, y : d}
+
+    hasil <- jarak(p1,p2)
+output(hasil)
+
+endprogram
