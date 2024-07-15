@@ -1,0 +1,28 @@
+procedure mencari(,in/out min, max: integer, in n1, n2:integer)
+
+algoritma
+    if n1 > n2 then
+		min <- n2
+		max <- n1
+	else then
+		min <- n1
+		max <- n2
+    endif
+
+endprocedure
+
+program mencariNilaiEkstrim
+
+kamus
+a, b, c, d                             : integer
+min1, min2, max1, max2, min, max, temp : integer
+
+algoritma
+input(a, b, c, d)
+	mencari(min1, max1, a, b)
+	mencari(min2, max2, c, d)
+	mencari(min, temp, min1, min2)
+	mencari(temp, max, max1, max2)
+output(max, min)
+
+endprogram

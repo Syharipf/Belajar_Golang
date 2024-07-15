@@ -1,0 +1,24 @@
+procedure denom(in/out k10, k2, k1 : integer, uang : integer) 
+
+algoritma
+    k10 <- uang div 10000
+	uang <- uang mod 10000
+	k2 <- uang div 2000
+	uang <- uang mod 2000
+	k1 <- uang div 1000
+
+endprocedure
+
+program denomUang
+
+kamus
+l1, l2, l3, uang : integer
+
+algoritma
+input(uang)
+    denom(l1, l2, l3, uang)
+output(l1, "Lembar 10000")
+output(l2, "Lembar 2000")
+output(l3, "Lembar 1000")
+
+endprogram

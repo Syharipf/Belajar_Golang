@@ -1,0 +1,18 @@
+procedure temp(in/out reamur, fahrenheit, kelvin : real, celcius : real)
+
+algoritma
+    reamur <- (4 div/ 5) * celcius
+	fahrenheit <- (9 div 5)*celcius + 32
+	kelvin <- celcius + 273.15
+
+endprocedure
+
+program temperatur
+
+kamus 
+c, r, f, k : real
+
+algoritma
+input(c)
+    temp(r, f, k, c)
+	output(r,"R", f"F", k, "K")

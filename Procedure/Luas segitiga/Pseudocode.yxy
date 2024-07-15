@@ -1,0 +1,21 @@
+function hitungLuas(in/out luas ; real, alas, tinggi real) 
+
+	Luas <- alas * tinggi div 2
+
+endprocedure
+
+program luasSegitiga
+
+kamus
+n : integer
+a, t, hasil : real
+
+algoritma
+input(n)
+    for i <- 1 to n do
+        input(a, t)
+            hitungLuas(hasil, a, t)
+        output(hasil)
+    endfor
+
+endprogram

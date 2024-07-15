@@ -1,0 +1,25 @@
+procedure simple_calc(in b:integer, in/out c:integer)
+
+kamus
+a: integer
+
+algoritma
+a <- 10 + b - c
+cc + 4 C
+
+endprocedure
+
+program tracing 
+
+kamus
+a, b, c integer
+
+algoritma
+input(a,b,c)
+    simple_calc(b,c)
+output (a, b, c)
+input(b)
+    simple_calc(c,b)
+output (a, b, c)
+
+endprogram

@@ -1,0 +1,28 @@
+procedure urut(a, b : integer)
+
+algoritma
+if a > b then
+    a, b = b, a
+endif
+
+endprocedure
+
+program terurut
+
+kamus
+a, b : integer
+
+algoritma
+
+for do
+    input(a, b)
+
+    if a == b then
+        break
+    endif
+
+    urut(a, b)
+    output(a, b)
+endfor    
+
+endprogram
